@@ -1,130 +1,57 @@
-# 🇬🇧 AVENTURA EN LONDRES
-## 12-16 Febrero 2026  
-**Background Image Suggestion:** Big Ben  
+# Guía para la presentación del viaje a Londres
 
----  
+## Paleta de colores
+- Rojo
+- Azul
+- Dorado
 
-## Slide 2: Weather Forecast  
-**Climate Information:**  
-- Average Temperatures: 5°C - 10°C  
-- Chance of Rain: 60%  
+## Sugerencias de fuentes
+- Montserrat
+- Open Sans
+- Calibri
 
-**Clothing Recommendations:**  
-- Layers for warmth: sweaters and jackets  
-- Waterproof coat or umbrella  
+## Contenido detallado para cada diapositiva
 
----  
+### Día 1: Llegada a Londres
+- Información sobre el vuelo y llegada al hotel
+- Imagen sugerida: Big Ben
 
-## Slide 3: Day 1 - Thursday Feb 12  
-**Arrival Times:**  
-- Morning Flight Arrival: [Insert Estimated Time]  
+### Día 2: Explorando Borough Market y The Shard
+- Actividades en Borough Market
+- Visita a The Shard
+- Imagen sugerida: The Shard
 
-**Evening Activity:**  
-- Watch the musical "Greatest Showman" at 19:30h  
+### Día 3: Un recorrido por Oxford
+- Visita a la ciudad universitaria
+- Imagen sugerida: Oxford
 
-**Photos Suggested:**  
-- Theater at night  
-- London streets  
+### Día 4: Disfrutando Notting Hill
+- Explorando el barrio
+- Imagen sugerida: Notting Hill
 
----  
+### Día 5: Relajación en Hyde Park
+- Actividades al aire libre
+- Imagen sugerida: Hyde Park
 
-## Slide 4: Day 2 - Friday Feb 13 (Morning)  
-**Activities:**  
-- Breakfast at Borough Market  
-- Visit to Tate Modern Museum  
-- Views from The Shard  
+## Consejos de diseño
+- Mantener el texto mínimo por diapositiva
+- Usar imágenes de alta calidad
 
-**Photos Suggested:**  
-- Colorful food market  
-- Panoramic views from The Shard  
+## Ubicaciones en el mapa
+- Marcar todos los lugares visitados en un mapa de Londres
 
----  
+## Lista de verificación de tips de viaje
+- Pasaporte
+- Documentos importantes
+- Dinero en efectivo
 
-## Slide 5: Day 2 - Friday Feb 13 (Afternoon)  
-**Lunch:**  
-- Lunch at SushiSamba at 15h  
+## Lista de verificación de fotos
+- Fotos en cada lugar visitado
+- Retratos en grupo
 
-**Activities:**  
-- Visit Leadenhall Market  
-- Walk around the area  
+## Recomendaciones de recursos
+- Imágenes de Unsplash
+- Iconos de Flaticon
 
-**Photos Suggested:**  
-- Victorian architecture  
-
----  
-
-## Slide 6: Day 3 - Saturday Feb 14  
-**Full Day Oxford Excursion:**  
-- Visit University Colleges  
-- Explore Bodleian Library & Christ Church  
-
-**Photos Suggested:**  
-- Gothic architecture in Historic Center  
-
----  
-
-## Slide 7: Day 4 - Sunday Feb 15 (Morning)  
-**Activities:**  
-- Visit Covent Garden, Piccadilly Circus, Trafalgar Square, Soho  
-- Optional visit to Madame Tussauds  
-
-**Photos Suggested:**  
-- Street performers  
-- Colorful houses  
-
----  
-
-## Slide 8: Day 4 - Sunday Feb 15 (Afternoon)  
-**Activities:**  
-- Explore Notting Hill's colorful houses  
-- Walk in Hyde Park  
-- Dinner at Randall & Aubin at 20h  
-
-**Photos Suggested:**  
-- Portobello Road  
-- Hyde Park  
-
----  
-
-## Slide 9: Day 5 - Monday Feb 16  
-**Departure Day:**  
-- Final breakfast  
-- Last minute souvenir shopping  
-
-**Photos Suggested:**  
-- Red phone booths  
-
----  
-
-## Slide 10: Map  
-**Map showing all main locations visited in London and Oxford**  
-
----  
-
-## Slide 11: Tips and Reminders  
-- Tickets for attractions  
-- Oyster Card for transport  
-- Umbrella for weather  
-- UK adapter for electronics  
-- Mobile data plan  
-
-*Include icons for each tip*  
-
----  
-
-## Slide 12: Photo Checklist  
-- Big Ben  
-- Tower Bridge  
-- Red phone booth  
-- Double decker bus  
-
-*Include checkboxes for family photos*  
-
----  
-
-## Slide 13: Final Slide  
-"¡QUE COMIENCE LA AVENTURA!"  
-**Hashtags:**  
-- #LondresEnFamilia  
-- #GreatestShowman  
-- #ViajeALondres
+### Notas Finales:
+- Asegúrate de practicar la presentación varias veces.
