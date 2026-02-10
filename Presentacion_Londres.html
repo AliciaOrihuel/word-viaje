@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura en Londres - 12-16 Febrero 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 60px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slide-content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 1000px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 4em;
+            color: #DC143C;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #012169;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            color: #DC143C;
+            margin: 20px 0 10px 0;
+        }
+        
+        p, li {
+            font-size: 1.4em;
+            line-height: 1.8;
+            color: #333;
+            margin: 10px 0;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+        
+        button {
+            background: #DC143C;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #012169;
+            transform: scale(1.05);
+        }
+        
+        .slide-number {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            color: white;
+            font-size: 1.2em;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        
+        ul {
+            margin-left: 40px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #012169 0%, #DC143C 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .highlight {
+            background: #FFD700;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        /* Slide específicos */
+        #slide1 {
+            background: linear-gradient(rgba(220, 20, 60, 0.7), rgba(1, 33, 105, 0.7)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23012169" width="1200" height="800"/><text x="600" y="400" font-size="200" fill="%23DC143C" text-anchor="middle" opacity="0.1">🇬🇧</text></svg>');
+        }
+        
+        #slide1 .slide-content {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .subtitle {
+            font-size: 1.8em;
+            color: #012169;
+            margin-top: 10px;
+        }
+        
+        .checklist {
+            font-size: 1.3em;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Slide 1: Portada -->
+        <div class="slide active" id="slide1">
+            <div class="slide-content">
+                <h1>🇬🇧 AVENTURA EN LONDRES</h1>
+                <p class="subtitle">12-16 Febrero 2026</p>
+                <p style="text-align: center; font-size: 2em; margin-top: 30px;">✈️ 🎭 🍽️ 📚 🌈</p>
+                <p style="text-align: center; margin-top: 30px; font-size: 1.2em; color: #666;">Familia Orihuel</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Clima -->
+        <div class="slide" id="slide2">
+            <div class="slide-content">
+                <h2>☁️ EL CLIMA NOS ACOMPAÑA</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 style="color: white;">🌡️ Temperaturas</h3>
+                        <p>5°C - 10°C</p>
+                        <p>Probabilidad de lluvia: 60%</p>
+                    </div>
+                    <div class="card">
+                        <h3 style="color: white;">🧥 Qué llevar</h3>
+                        <p>☂️ Paraguas</p>
+                        <p>🧣 Capas de abrigo</p>
+                        <p>🧤 Guantes y bufanda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Día 1 -->
+        <div class="slide" id="slide3">
+            <div class="slide-content">
+                <h2>✈️ DÍA 1 - JUEVES 12 DE FEBRERO</h2>
+                <h3>¡Comienza la Aventura!</h3>
+                <ul>
+                    <li>🛬 <strong>Vuelo papis</strong> - Llegada a Londres</li>
+                    <li>⏰ <strong>17:00h</strong> - Ali y Andrea llegan al apartamento</li>
+                    <li>🎭 <strong>19:30h</strong> - <span class="highlight">Musical "The Greatest Showman"</span></li>
+                </ul>
+                <p style="text-align: center; margin-top: 40px; font-size: 1.6em;">🌃 Noche mágica en el West End</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Día 2 Mañana -->
+        <div class="slide" id="slide4">
+            <div class="slide-content">
+                <h2>🍽️ DÍA 2 MAÑANA - VIERNES 13</h2>
+                <h3>Arte, Gastronomía y Alturas</h3>
+                <ul>
+                    <li>🥐 <strong>Borough Market</strong> - Desayuno entre puestos tradicionales</li>
+                    <li>🎨 <strong>Tate Modern Museum</strong> - Arte contemporáneo</li>
+                    <li>🏙️ <strong>The Shard</strong> - Vistas espectaculares de Londres (310 metros de altura)</li>
+                </ul>
+                <p style="text-align: center; margin-top: 40px; font-size: 1.4em; color: #DC143C;">📸 No olvides la cámara para las vistas panorámicas</p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Día 2 Tarde -->
+        <div class="slide" id="slide5">
+            <div class="slide-content">
+                <h2>🍣 DÍA 2 TARDE - VIERNES 13</h2>
+                <h3>SushiSamba y Arquitectura Victoriana</h3>
+                <ul>
+                    <li>⏰ <strong>15:00h</strong> - <span class="highlight">Comida en SushiSamba</span></li>
+                    <li>🏛️ <strong>Leadenhall Market</strong> - Mercado victoriano (¡escenario de Harry Potter!)</li>
+                    <li>🚶 <strong>Paseo</strong> - Zona financiera y arquitectura moderna</li>
+                </ul>
+                <p style="text-align: center; margin-top: 40px; font-size: 1.4em;">🎬 El mismo mercado de las películas de Harry Potter</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Día 3 -->
+        <div class="slide" id="slide6">
+            <div class="slide-content">
+                <h2>📚 DÍA 3 - SÁBADO 14</h2>
+                <h3>Excursión a Oxford - La Ciudad Universitaria</h3>
+                <ul>
+                    <li>🎓 <strong>Universidad de Oxford</strong> - Colleges históricos</li>
+                    <li>📖 <strong>Biblioteca Bodleiana</strong> - Una de las más antiguas de Europa</li>
+                    <li>🏰 <strong>Christ Church College</strong> - Comedor de Harry Potter</li>
+                    <li>🌳 <strong>Centro histórico</strong> - Calles empedradas y librerías</li>
+                </ul>
+                <p style="text-align: center; margin-top: 40px; font-size: 1.4em; color: #012169;">Día completo en la ciudad de los estudiantes</p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Día 4 Mañana -->
+        <div class="slide" id="slide7">
+            <div class="slide-content">
+                <h2>🎭 DÍA 4 MAÑANA - DOMINGO 15</h2>
+                <h3>Londres Icónico</h3>
+                <ul>
+                    <li>🎪 <strong>Covent Garden</strong> - Artistas callejeros y tiendas</li>
+                    <li>🎡 <strong>Piccadilly Circus</strong> - El Times Square londinense</li>
+                    <li>🦁 <strong>Trafalgar Square</strong> - Leones y National Gallery</li>
+                    <li>🌈 <strong>Soho</strong> - Barrio vibrante y multicultural</li>
+                    <li>⭐ <strong>Madame Tussauds</strong> (opcional)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8: Día 4 Tarde -->
+        <div class="slide" id="slide8">
+            <div class="slide-content">
+                <h2>🌈 DÍA 4 TARDE - DOMINGO 15</h2>
+                <h3>Notting Hill y Hyde Park</h3>
+                <ul>
+                    <li>🎨 <strong>Notting Hill</strong> - Casas de colores pastel y Portobello Road</li>
+                    <li>🚪 <strong>La puerta azul</strong> - De la película "Notting Hill"</li>
+                    <li>🌳 <strong>Hyde Park</strong> - Paseo relajante por el pulmón verde de Londres</li>
+                    <li>🍽️ <strong>20:00h</strong> - <span class="highlight">Cena en Randall & Aubin</span></li>
+                </ul>
+                <p style="text-align: center; margin-top: 30px; font-size: 1.4em;">💙 Uno de los barrios más bonitos de Londres</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Día 5 -->
+        <div class="slide" id="slide9">
+            <div class="slide-content">
+                <h2>👋 DÍA 5 - LUNES 16 DE FEBRERO</h2>
+                <h3>Adiós Londres... ¡Hasta pronto!</h3>
+                <ul>
+                    <li>✈️ <strong>Vuelos de regreso</strong> - Sisters y Papis</li>
+                    <li>☕ <strong>Último desayuno</strong> - Despedida del apartamento</li>
+                    <li>🎁 <strong>Compras finales</strong> - Últimos recuerdos</li>
+                    <li>📸 <strong>Fotos de despedida</strong> - Cabina telefónica roja</li>
+                </ul>
+                <p style="text-align: center; margin-top: 40px; font-size: 1.6em; color: #DC143C;">💔 Nos llevamos Londres en el corazón</p>
+            </div>
+        </div>
+
+        <!-- Slide 10: Mapa -->
+        <div class="slide" id="slide10">
+            <div class="slide-content">
+                <h2>📍 MAPA DEL VIAJE</h2>
+                <h3>Nuestras ubicaciones principales</h3>
+                <div class="grid">
+                    <div>
+                        <p><strong>📌 Londres:</strong></p>
+                        <ul style="font-size: 1.2em;">
+                            <li>Borough Market</li>
+                            <li>The Shard</li>
+                            <li>Leadenhall Market</li>
+                            <li>Covent Garden</li>
+                            <li>Piccadilly Circus</li>
+                            <li>Notting Hill</li>
+                            <li>Hyde Park</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>📌 Oxford:</strong></p>
+                        <ul style="font-size: 1.2em;">
+                            <li>Universidad de Oxford</li>
+                            <li>Biblioteca Bodleiana</li>
+                            <li>Christ Church</li>
+                            <li>Centro histórico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Consejos -->
+        <div class="slide" id="slide11">
+            <div class="slide-content">
+                <h2>🎒 CONSEJOS Y RECORDATORIOS</h2>
+                <h3>No olvides...</h3>
+                <div class="checklist">
+                    <p>🎫 Confirmaciones de reservas (SushiSamba, Randall & Aubin)</p>
+                    <p>🎭 Entradas del musical impresas</p>
+                    <p>🚇 Oyster Card para el transporte</p>
+                    <p>☂️ Paraguas (¡es Londres!)</p>
+                    <p>🔌 Adaptador de enchufe UK</p>
+                    <p>📱 Datos móviles/roaming activado</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Checklist Fotográfico -->
+        <div class="slide" id="slide12">
+            <div class="slide-content">
+                <h2>📸 MOMENTOS IMPRESCINDIBLES</h2>
+                <h3>Checklist fotográfico</h3>
+                <div class="checklist">
+                    <p>✅ Big Ben y Westminster</p>
+                    <p>✅ Tower Bridge</p>
+                    <p>✅ Cabina telefónica roja</p>
+                    <p>✅ Autobús rojo de dos pisos</p>
+                    <p>✅ Foto familiar en cada localización</p>
+                    <p>✅ Comidas y restaurantes especiales</p>
+                    <p>✅ Atardeceres londinenses</p>
+                    <p>✅ Selfie grupal final</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Cierre -->
+        <div class="slide" id="slide13">
+            <div class="slide-content">
+                <h1>🇬🇧 ¡QUE COMIENCE LA AVENTURA!</h1>
+                <p style="text-align: center; font-size: 2em; margin: 40px 0; color: #012169;">Londres nos espera</p>
+                <p style="text-align: center; font-size: 1.4em; color: #666;">#LondresEnFamilia #GreatestShowman #ViajeALondres2026</p>
+                <p style="text-align: center; font-size: 3em; margin-top: 50px;">✨🎭🍽️📚🌈✨</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-number">
+        <span id="current-slide">1</span> / 13
+    </div>
+
+    <div class="navigation">
+        <button onclick="previousSlide()">◀ Anterior</button>
+        <button onclick="nextSlide()">Siguiente ▶</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Navegación con teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Click para avanzar
+        document.querySelector('.slide-container').addEventListener('click', function(e) {
+            if (!e.target.closest('button')) {
+                nextSlide();
+            }
+        });
+    </script>
+</body>
+</html>
