@@ -1,5 +1,5 @@
 # 🇬🇧 AVENTURA EN LONDRES
-## 12-16 Febrero
+## 12-16 Febrero 2026
 
 ---
 
@@ -12,9 +12,9 @@
 ### Pronóstico del tiempo durante nuestra estancia
 
 **Sugerencia de foto:** Captura de pantalla del clima de Londres
-- Temperaturas esperadas
-- Probabilidad de lluvia
-- Consejos de vestimenta
+- Temperaturas esperadas: 5°C - 10°C
+- Probabilidad de lluvia: 60%
+- Consejos de vestimenta: capas de abrigo, impermeable y paraguas
 
 ---
 
@@ -138,7 +138,7 @@
 
 ---
 
-## 🎒 TIPS Y RECORDATORIOS
+## 🎒 CONSEJOS Y RECORDATORIOS
 
 **No olvidar:**
 - 🎫 Confirmaciones de reservas (SushiSamba, Randall & Aubin)
@@ -151,7 +151,7 @@
 ---
 
 ## 📸 MOMENTOS IMPRESCINDIBLES
-### Checklist fotográfico
+### Lista de fotos que no pueden faltar
 
 ✅ Big Ben y Westminster (de fondo en algún paseo)
 ✅ Tower Bridge (si pasamos cerca)
